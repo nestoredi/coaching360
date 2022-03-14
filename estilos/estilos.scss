@@ -1,0 +1,825 @@
+*{
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2? family= Roboto:ital,wght@1,300 & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:ital,wght@1,100 & family= Roboto:ital,wght@1,300 & display=swap');
+
+
+$color1: #1e6ba2;   
+$color2: #be8b09;
+$color3: #68757b;   
+$color4: #ffffff; 
+$color5:#3395db;
+$color6:rgba(96, 179, 238, 0.5);
+$color7:#dbc284;
+
+$font1: 'Roboto', sans-serif;
+$font2:'Montserrat', sans-serif;
+
+body{
+    background-color: $color5;
+    margin: 0;
+    padding: 0;
+
+ 
+
+.navbar{
+    background-color: $color1 !important;
+    height: 200px;
+    padding-bottom: 30px; 
+    
+    .logo{
+        display: flex;
+        flex-wrap: wrap;
+        text-overflow: 1;
+        margin-top: 15px;
+        padding-bottom: 55px;
+        padding-left: 0px;
+        padding-right: 0;
+        height: 65px;
+        width: 65px;
+        background:repeating-radial-gradient($color1 10%,$color2 30%,$color3 40%);
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 30px;
+        animation-name: giragira;
+        animation-iteration-count: infinite;
+        animation-timing-function:linear;
+        animation-duration: 5s;
+        animation-direction:normal;
+    } 
+    @keyframes giragira {
+        0%{
+            transform: rotatey(0deg);
+            background:repeating-radial-gradient($color1 10%,$color2 30%,$color3 40%)
+        }
+        50%{
+            transform: rotateY(360deg);
+            background:repeating-radial-gradient($color4 10%,$color2 30%,black 40%)
+        }
+        100%{
+            transform: rotatey(0deg);
+    
+            }
+    }
+
+   .navbar-brand .logo p{
+   
+    align-items: center;
+    font-size: 10px;
+    font-weight: bolder;
+    
+}
+
+   .navbar-dark .navbar-nav .nav-link {
+    color: $color1;
+}
+   .collapse{
+    background-color: $color1 !important;
+    
+}
+   .nav-font{
+       font-family: $font2;
+       font-size: 20px;
+   }
+}
+footer,section, .text-center{
+    background-color: $color1 !important;
+
+    p{
+        color: $color4;
+    }
+    
+   i{
+       list-style: none;
+   }
+    .rsocial {
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly !important;
+        padding-top: 15px;
+        padding-right: 30px;
+        width: 75px;
+    }
+    span {
+        color: $color4;
+    }
+    h6{
+        color: $color4;
+    }
+    .copy{
+        display: flex;
+    }
+    .text-muted{
+        color: $color3;
+    }
+
+.formu {
+    justify-content: space-evenly;
+    background-color: $color2;
+    margin-top: 25px;
+}
+}
+.jumbotron{
+    background-image: url(../imagenes/enfoque.jpg);
+    background-position:right;
+    background-size: cover;
+    height: 500px;
+    color: $color4;
+    border-radius: 0;
+    margin: 0;
+    display: flex !important;
+    flex-wrap: wrap;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    
+    p{
+        color: $color3;
+        text-shadow: rgb(66, 136, 240) 1px 1px;
+        background-color: $color4;
+        text-align: center;
+    }
+    .transp{
+        display: flex !important;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background-color: rgba(0,0,0,0.1);
+        height: 500px;
+        width: 40%;
+        position: relative;
+        top: -60px;
+        left: -25px;
+        justify-content: center;
+        align-content: center;
+        padding: 15px;
+
+        h1{
+            text-align: center;
+            color: $color1;
+            font-size: 50px;
+            font-family: $font1;
+            text-shadow: rgb(24, 22, 22) 2px 5px;
+        }
+
+    
+        p{
+        
+        font-size: 18px;
+        font-family: $font2;
+        text-align: justify;
+        color: $color2;
+        }
+    
+        .btn-primary{
+        background-color: $color1;
+        }
+        .btn-primary:hover{
+        background-color: $color2 !important;
+        }
+    }
+}
+.borde{
+    border: 2px solid $color3;
+}
+.box{
+    background-color: $color2;
+    height: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 25%;
+   }
+   .box1{
+       display: flex;
+       flex-direction: column;
+   }
+.grilla{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,400px);
+    background-image: url(../imagenes/fondoMar.jpg);
+    width: 100vw;
+  
+}
+.caja{
+    
+    padding: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    h3, h5{
+        color: $color4;
+    }
+    
+    }
+    .caja1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-color: $color7 !important;
+        display: flex;
+        flex-wrap: wrap;
+       
+    }
+    .caja2{
+        grid-column: 2/4;
+        grid-row: 1/2;
+        padding-left: 100px;
+        background-color: $color7 !important;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .caja3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .caja4{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        border-bottom: 5px solid  $color3;
+        padding-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .caja5{
+        grid-column: 3/4;
+        grid-row: 2/3; 
+        padding-top: 100px;
+        padding-right: 50px;
+        display: flex;
+        flex-wrap: wrap; 
+    }
+    .caja6{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .caja7{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        padding-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .caja8{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        padding-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    
+    
+
+   
+
+.estudio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image:url(../imagenes/fondoMar.jpg) ;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    /*overflow: hidden;*/
+    opacity: 0.5;
+    height: 500px;
+    justify-content: space-evenly;
+}
+.caj{
+    display: flex;
+    flex-direction: row;
+   
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h3,h4,h5,p{
+        color: $color4;
+    }
+}
+.caj1{
+    display: inline-block;
+    padding-top: 200px;
+    padding-left: -25px;
+}
+.caj2{
+    display: inline-block;
+    border-right: black;
+    padding-top: 100px;
+    padding-left: 40px;
+}
+.caj3{
+    display: inline-block;
+    padding-top: 200px;
+    padding-left: 50px;
+}
+.row{
+    margin: 0;
+    justify-content: space-evenly;
+}
+.tit{
+    text-align: center;
+    color: $color4;
+}
+.color3{
+    display: inline-block;
+    background-color: $color4;
+    height: 300px;
+    justify-content:space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    object-fit: cover;
+    overflow: hidden;
+    text-align: center;
+    h3, p{
+        color: $color3;
+        font-family: $font2;
+    }
+
+    .img-fluid{
+        height: 200px;
+        width: 300px;
+        object-fit: cover;
+        overflow: hidden;
+
+    }
+    
+}
+.diapositiva{
+    background-color: rgb(206, 226, 152)!important;
+   /*padding: 50px;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+}
+.carousel-item img{
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.button{
+    color: $color5;
+}
+.formu{
+  padding: 1em;
+}
+.cont2{
+    justify-content: center;
+    align-items: center;
+}
+
+.jumbotron .cabecera h1{
+    h1{
+        text-align:center;
+        color: $color2;
+    }
+  
+}
+.cont2{
+    justify-content: center;
+    align-items: center;
+    
+}
+.cont2 img{
+    width: 250px;
+    height: 250px;
+}
+.blog{
+    background-color: $color3;
+    height: 300px;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+
+    h3{
+        color: $color1;
+        text-align: center;
+        text-shadow: rgb(24, 22, 22) 2px 5px;
+    }
+    button{
+        background-color: $color5;
+        color: $color4;
+        border-radius: 25px;
+    }
+    button:hover{
+        background-color: $color2;
+    }
+}
+.blog1{
+    background-image: url(../imagenes/basketball.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.blog2{
+    background-image: url(../imagenes/leyesSistemicas.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.blog3{
+    background-image: url(../imagenes/niveleslogicos.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.blog4{
+    background-image: url(../imagenes/pnl.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+    justify-content:space-around;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.tema{
+    height: 600px;
+    width: 100vw;
+}
+.tema1{
+    background-color: $color1;
+}
+.tema2{
+    background-color: $color2;
+}
+.tema3{
+    background-color: $color3;
+}
+.tema4{
+    background-color: $color4;
+}
+}
+.volver{
+    background-image: url(../imagenes/puente.jpg);
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    overflow: scroll;
+}
+@media only screen and (min-width:320px) and (max-width:719px){
+    body{
+        margin: 0;
+        padding: 0;
+ 
+    .jumbotron{
+        width: auto !important;
+
+    }
+    body{
+        width: 100vw;
+    }
+    .logo{
+        margin-top: 5px !important;
+    }
+
+    .jumbotron{
+        background-image: url(../imagenes/enfoque.jpg);
+        background-position:right;
+        background-size: cover;
+        height: 300px;
+        /*padding: 15px;*/
+        color: $color4;
+        border-radius: 0;
+        margin-left: -30;
+        
+       
+        .transp{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgba(0,0,0,0.1);
+            height: 500px;
+            width: 100vw !important;
+            position: relative;
+            top: -10px;
+            left: -0px;
+            justify-content: center;
+            align-content: center;
+            padding: 25px;
+    
+            h1{
+                text-align: center;
+                color: $color1;
+                font-size: 25px !important;
+                font-family: $font1;
+                text-shadow: rgb(24, 22, 22) 2px 5px;
+            }
+    
+        }
+            p{
+            
+            font-size: 15px;
+            font-family: $font2;
+            text-align: justify;
+            color: transparent;
+            }
+        
+            .btn-primary{
+            background-color: $color1;
+            }
+            .btn-primary:hover{
+            background-color: $color2 !important;
+            }
+    }
+    .color3{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: $color4;
+        height: 550px;
+        justify-content:space-evenly;
+        align-items:center;
+        box-sizing: border-box;
+        object-fit: cover;
+        overflow: hidden;
+        /*padding-left: 25%;*/
+    
+        .img-fluid{
+            height: auto;
+            width: 400px;
+        }
+}
+.prod_row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    object-fit: cover;
+}
+ .box.box1,.box2, .box3,.box4{
+    
+    width: 100vw !important;
+    margin: 0;
+    padding: 15px;
+}
+.caj{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h3,h4,h5,p{
+        color: $color4;
+        font-size: 75%;
+    }
+}
+.caj1{
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: -25px;
+}
+.caj2{
+    display: inline-block;
+    border-right: black;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+.caj3{
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+.grilla{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(8,400px);
+    background-image: url(../imagenes/cieloNocturno.jpg);
+    width: 100vw;
+}
+    .caja{
+
+        padding: 30px;
+        justify-content: space-evenly;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+       
+        
+        h3, h5{
+            color: $color4;
+        }
+    }    
+
+        .caja1{
+            grid-column: 1/2;
+            grid-row: 1/2;
+            background-color: $color7 !important;
+            display: flex;
+            flex-wrap: wrap;
+           /* padding-left: 10px;
+            padding-right: 10px;*/
+            justify-content: center;
+            align-items: center;
+           
+        }
+        .caja2{
+            grid-column: 1/2;
+            grid-row: 2/3;
+            background-color: $color7 !important;
+            padding-left: 20px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .caja3{
+            grid-column: 1/2;
+            grid-row: 3/4;
+            padding-top: 100px;
+            padding-left: 20px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .caja4{
+            grid-column: 1/2;
+            grid-row: 4/5;
+            border-bottom: 5px solid  $color3;
+            padding-top: 100px;
+            padding-left: 20px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .caja5{
+            grid-column: 1/2;
+            grid-row: 5/6; 
+            padding-top: 100px;
+            padding-left: 20px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .caja6{
+            grid-column: 1/2;
+            grid-row: 6/7;
+            padding-top: 100px;
+            padding-left: 20px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .caja7{
+            grid-column: 1/2;
+            grid-row: 7/8;
+            padding-top: 100px;
+            padding-left: 20px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .caja8{
+            grid-column: 1/2;
+            grid-row: 8/9;
+            padding-top: 100px;
+            padding-left: 20px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        
+
+}
+@media only screen and ( min-width:7px)and (max-width:1140px){
+    .navbar{
+        width: 100vw;
+        padding-right: 25px;
+    }
+    .prod_row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        object-fit: cover;
+    }
+    
+    .card, .card1, .card2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 600px;
+    }
+    .logo{
+        margin-top: 5px !important;
+    }
+
+    .jumbotron{
+        background-image: url(../imagenes/enfoque.jpg);
+        background-position:center;
+        background-size: cover;
+        height: 300px;
+        /*padding: 15px;*/
+        color: $color4;
+        border-radius: 0;
+        margin-left: -10;
+        
+       
+        .transp{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgba(0,0,0,0.3);
+            height: 100vw;
+            width: 500px !important;
+            position: relative;
+           /* top: -10px;
+            left: -30px;*/
+            padding: 15px;
+            justify-content: center;
+            align-content: center;
+            padding: 25px;
+    
+            h1{
+                text-align: center;
+                color: $color1;
+                font-size: 30px !important;
+                font-family: $font1;
+                text-shadow: rgb(24, 22, 22) 2px 5px;
+            }
+    
+        }
+            p{
+            
+            font-size: 15px;
+            font-family: $font2;
+            text-align: justify;
+            color: transparent;
+            }
+        
+            .btn-primary{
+            background-color: $color1;
+            }
+            .btn-primary:hover{
+            background-color: $color2 !important;
+            }
+    } 
+    .box.box1,.box2, .box3,.box4{
+    
+        /*width: 100vw !important;*/
+        margin: 0;
+        padding: 5px;
+    } 
+    
+            
+            
+                
+      
+    
+    
+} 
+
+
+}
