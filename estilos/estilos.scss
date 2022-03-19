@@ -469,8 +469,12 @@ footer,section, .text-center{
     flex-direction: column;
 }
 .tema{
-    height: 600px;
+    height: 300px;
     width: 100vw;
+    padding: 10px;
+    object-fit: cover;
+    overflow: scroll;
+        
 }
 .tema1{
     background-color: $color1;
@@ -480,6 +484,8 @@ footer,section, .text-center{
 }
 .tema3{
     background-color: $color3;
+    object-fit: cover;
+    overflow: scroll;
 }
 .tema4{
     background-color: $color4;
@@ -487,7 +493,7 @@ footer,section, .text-center{
 }
 .volver{
     background-image: url(../imagenes/puente.jpg);
-    height: 150px;
+    height: 500px;
     background-position: center;
     background-size: cover;
     object-fit: cover;
@@ -812,6 +818,19 @@ footer,section, .text-center{
         margin: 0;
         padding: 5px;
     } 
+    nav .volver{
+        background-color: $color2;
+        color: $color4;
+        border-radius: 50%;
+    }
+    .blg{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+    }
     
             
             

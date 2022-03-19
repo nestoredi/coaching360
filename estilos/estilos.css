@@ -703,8 +703,12 @@ body .blog4 {
 }
 
 body .tema {
-  height: 600px;
+  height: 300px;
   width: 100vw;
+  padding: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: scroll;
 }
 
 body .tema1 {
@@ -717,6 +721,9 @@ body .tema2 {
 
 body .tema3 {
   background-color: #68757b;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: scroll;
 }
 
 body .tema4 {
@@ -725,7 +732,7 @@ body .tema4 {
 
 .volver {
   background-image: url(../imagenes/puente.jpg);
-  height: 150px;
+  height: 500px;
   background-position: center;
   background-size: cover;
   -o-object-fit: cover;
@@ -1202,6 +1209,29 @@ body .tema4 {
     /*width: 100vw !important;*/
     margin: 0;
     padding: 5px;
+  }
+  nav .volver {
+    background-color: #be8b09;
+    color: #ffffff;
+    border-radius: 50%;
+  }
+  .blg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 400px;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
