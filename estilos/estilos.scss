@@ -83,6 +83,9 @@ body{
        font-family: $font2;
        font-size: 20px;
    }
+   .nav-link{
+       text-decoration: none;
+   }
 }
 footer,section, .text-center{
     background-color: $color1 !important;

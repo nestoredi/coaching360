@@ -100,6 +100,10 @@ body .navbar .nav-font {
   font-size: 20px;
 }
 
+body .navbar .nav-link {
+  text-decoration: none;
+}
+
 body footer, body section, body .text-center {
   background-color: #1e6ba2 !important;
 }
